@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Step 1"
+                        android:textColor="@android:color/black"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Select a meal type"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/family"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/fam" />
+
+                    <ImageButton
+                        android:id="@+id/singles"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/sing" />
+
+                    <Button
+                        android:id="@+id/yourBag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:text="- VIEW CURRENT ORDER -" />
+
+                    <Button
+                        android:id="@+id/delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="DELETE CURRENT ORDER"
+                        android:textColor="@color/colorAccent"
+                        tools:text="DELETE ITEMS IN BAG" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
